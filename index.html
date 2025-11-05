@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HCAT – HIPAA‑Compliant Conversion Sync</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+  <!-- Header (icon removed, white bar) -->
+  <header class="bg-white fixed w-full z-30 shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-6">
+      <span class="text-2xl font-bold tracking-tight text-gray-800">HCAT</span>
+      <nav class="hidden md:flex items-center space-x-10 text-sm font-medium text-gray-700">
+        <a href="#features" class="hover:text-indigo-600">Features</a>
+        <a href="#partners" class="hover:text-indigo-600">Integrations</a>
+        <a href="#pricing" class="hover:text-indigo-600">Pricing</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
+      <a href="#contact" class="hidden md:inline-block bg-indigo-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg shadow hover:bg-indigo-700 transition">Request Demo</a>
+      <!-- Mobile menu button -->
+      <button id="navToggle" class="md:hidden text-gray-700 focus:outline-none" onclick="document.getElementById('mobileNav').classList.toggle('hidden')">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <!-- Mobile nav -->
+    <div id="mobileNav" class="hidden md:hidden bg-white border-t border-gray-200">
+      <nav class="flex flex-col px-6 py-6 space-y-4 text-sm font-medium text-gray-700">
+        <a href="#features" class="hover:text-indigo-600">Features</a>
+        <a href="#partners" class="hover:text-indigo-600">Integrations</a>
+        <a href="#pricing" class="hover:text-indigo-600">Pricing</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        <a href="#contact" class="bg-indigo-600 text-white text-center py-2 rounded-lg mt-4">Request Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-tr from-indigo-600 to-blue-600 text-white pt-48 pb-24" id="home">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h1 class="text-4xl sm:text-5xl font-bold mb-4">HIPAA‑Compliant Conversion Sync for Healthcare Marketers</h1>
+      <p class="text-lg opacity-90 mb-8">Sync revenue and lead outcomes directly with Google, Meta, and other ad platforms—without ever touching PHI.</p>
+      <a href="#contact" class="inline-block bg-white text-indigo-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">Request Demo</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Feature 1 -->
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="text-lg font-semibold mb-2">Plug‑and‑Play Integrations</h3>
+          <p class="text-sm opacity-80">Connect your CRM & ad platforms in <span class="font-medium">minutes</span>—no dev resources required.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="text-lg font-semibold mb-2">Signed BAA + AES‑256</h3>
+          <p class="text-sm opacity-80">Every account comes with a Business Associate Agreement and enterprise‑grade encryption baked in.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="bg-white rounded-2xl shadow p-6">
+          <h3 class="text-lg font-semibold mb-2">Unlock Value‑Based Bidding</h3>
+          <p class="text-sm opacity-80">Send revenue‑weighted conversions to Google & Meta so their algorithms chase <em>profit</em>, not vanity leads.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logo strip -->
+  <section id="partners" class="py-12 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-center text-xl font-semibold mb-8">Trusted Integrations</h2>
+      <div class="flex flex-wrap justify-center items-center gap-8 opacity-80">
+        <img src="https://logo.clearbit.com/google.com" alt="Google" class="h-10 w-auto" />
+        <img src="https://logo.clearbit.com/meta.com" alt="Meta" class="h-10 w-auto" />
+        <img src="https://logo.clearbit.com/hubspot.com" alt="HubSpot" class="h-10 w-auto" />
+        <img src="https://logo.clearbit.com/activecampaign.com" alt="ActiveCampaign" class="h-10 w-auto" />
+        <img src="https://logo.clearbit.com/salesforce.com" alt="Salesforce" class="h-10 w-auto" />
+        <img src="https://logo.clearbit.com/cloud9.software" alt="Cloud9 PMS" class="h-10 w-auto" />
+        <div class="flex items-center gap-2 rounded-full bg-gray-100 px-4 py-2 text-sm font-medium"><svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h16v4H4zm0 6h16v10H4z"/></svg>SQL / Data Warehouse</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study -->
+  <section id="case-study" class="py-20 bg-indigo-600 text-white text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold mb-6">Results that speak.</h2>
+      <p class="text-lg mb-8 italic max-w-2xl mx-auto">“HCAT let us feed real procedure revenue back to Google—our funnel tightened overnight.” <span class="not-italic font-medium">— CMO, DSO organization</span></p>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <div class="bg-white/10 p-6 rounded-xl">
+          <div class="text-3xl font-bold mb-1">▼ 43%</div>
+          <div class="text-sm opacity-90">Cost‑per‑Lead</div>
+        </div>
+        <div class="bg-white/10 p-6 rounded-xl">
+          <div class="text-3xl font-bold mb-1">▲ 147%</div>
+          <div class="text-sm opacity-90">Booked Patients</div>
+        </div>
+        <div class="bg-white/10 p-6 rounded-xl">
+          <div class="text-3xl font-bold mb-1">▼ 34%</div>
+          <div class="text-sm opacity-90">Cost‑per‑Booked Lead</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 bg-gray-50">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-semibold mb-8">Simple, predictable pricing</h2>
+      <div class="bg-white rounded-2xl shadow p-10 inline-block text-left max-w-sm mx-auto">
+        <div class="text-center mb-6">
+          <span class="text-5xl font-bold text-indigo-600">$300</span><span class="text-xl font-medium"> / month</span>
+          <div class="text-sm opacity-80">Multi‑location discounts available</div>
+        </div>
+        <ul class="text-sm space-y-2 mb-6">
+          <li>Unlimited conversions</li>
+          <li>Signed BAA</li>
+          <li>Email & Slack support</li>
+        </ul>
+        <a href="#contact" class="block bg-indigo-600 text-white text-center font-semibold py-3 rounded-lg hover:bg-indigo-700 transition">Request Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Badges -->
+  <section class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4 flex flex-wrap justify-center items-center gap-10">
+      <img src="https://i.imgur.com/dx6E34S.png" alt="HIPAA Seal of Compliance" class="h-14" />
+      <img src="https://i.imgur.com/uRZc6oM.png" alt="AES‑256 Encryption" class="h-14" />
+      <img src="https://i.imgur.com/ApZa1cn.png" alt="Signed BAA" class="h-14" />
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-semibold mb-6">Ready to improve your metrics?</h2>
+      <p class="text-lg mb-8">Fill out the quick form below and discover how HCAT can slash CPL and boost booked patients—fast.</p>
+      <form class="max-w-lg mx-auto grid gap-6 text-left">
+        <div>
+          <label class="block text-sm font-medium mb-1" for="name">Name</label>
+          <input type="text" id="name" class="w-full rounded-lg px-4 py-3 text-gray-800" placeholder="Jane Doe" required />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1" for="email">Work Email</label>
+          <input type="email" id="email" class="w-full rounded-lg px-4 py-3 text-gray-800" placeholder="you@clinic.com" required />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1" for="company">Organization</label>
+          <input type="text" id="company" class="w-full rounded
